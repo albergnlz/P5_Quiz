@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quizzes</title>
+</head>
+<body>
+<p><%= " Quizzes " %></p>
+<table>
+    <% for (var i in quizzes){%>
+    <% var quiz= quizzes[i];%>
+    <li>
+        <%=quiz.question%> &lt; <%=quiz.answer%>
+    </li>
+    <%}%>
+</table>
+
+<a href="/">Home</a>
+<a href="/credits">Credits</a>
+
+</body>
+</html>
