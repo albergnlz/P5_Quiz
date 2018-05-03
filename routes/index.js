@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 
 /* GET CREDITS. */
 router.get('/credits', function(req, res, next) {
-    res.render('credits');
+    res.render('credits', { title: 'ALBERTO' });
 });
 
 module.exports = router;
